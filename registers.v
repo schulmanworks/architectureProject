@@ -9,6 +9,6 @@ module registers(input RegWrite, clk,
   always @ (posedge clk)
     begin
       register[0] <= 0;
-      if (RegWrite== 1) register[writead] <= data_in;
+      if (RegWrite == 1 && writead != 0) register[writead] <= data_in;
     end
 endmodule
