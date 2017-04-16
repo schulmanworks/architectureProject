@@ -60,7 +60,7 @@ module processor(
   thirtytwo_bit_mux JRmux (.select(jr), .zero_value(JMuxout),
                           .one_value(reg1data), .out_value(newPC));
 
-  Data_Memory DM (clk, MemRead, Memwrite, ALUOut, reg2data, memout);
+  Data_Memory DM (clk, MemRead, MemWrite, ALUOut, reg2data, memout);
 
   thirtytwo_bit_mux  Mmux (.select(MemtoReg), .zero_value(ALUOut),
                             .one_value(memout), .out_value(Mmuxout));
