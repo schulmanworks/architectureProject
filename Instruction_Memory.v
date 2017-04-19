@@ -7,7 +7,7 @@ module Instruction_Memory (
       0: inst =  32'h34090005; // ori $t1, $0, 0x5
       4: inst =  32'h340a0005; // ori $t2, $0, 0x5
       8: inst =  32'h340b0008; // ori $t3, $0, 0x8
-      12: inst =  32'h340c000f; // ori $t4, $0, 0xf
+      12: inst = 32'h340c000f; // ori $t4, $0, 0xf
       16: inst = 32'h340d0020; // ori $t5, $0, 0x20
 
       // R-type
